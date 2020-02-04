@@ -101,6 +101,7 @@
             // 
             // cboLibros
             // 
+            this.cboLibros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLibros.FormattingEnabled = true;
             this.cboLibros.Items.AddRange(new object[] {
             "Baldor",
@@ -112,6 +113,7 @@
             this.cboLibros.Name = "cboLibros";
             this.cboLibros.Size = new System.Drawing.Size(196, 21);
             this.cboLibros.TabIndex = 6;
+            this.cboLibros.SelectedIndexChanged += new System.EventHandler(this.cboLibros_SelectedIndexChanged);
             // 
             // txtPrecio
             // 
@@ -135,6 +137,7 @@
             this.txtSub.ReadOnly = true;
             this.txtSub.Size = new System.Drawing.Size(100, 20);
             this.txtSub.TabIndex = 9;
+            this.txtSub.TextChanged += new System.EventHandler(this.txtSub_TextChanged);
             // 
             // txtImpuesto
             // 
@@ -148,6 +151,7 @@
             // 
             this.txtPagar.Location = new System.Drawing.Point(223, 271);
             this.txtPagar.Name = "txtPagar";
+            this.txtPagar.ReadOnly = true;
             this.txtPagar.Size = new System.Drawing.Size(100, 20);
             this.txtPagar.TabIndex = 11;
             // 
@@ -159,6 +163,7 @@
             this.btnCalcular.TabIndex = 12;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnNuevo
             // 
@@ -168,6 +173,7 @@
             this.btnNuevo.TabIndex = 13;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnSalir
             // 
@@ -177,6 +183,7 @@
             this.btnSalir.TabIndex = 14;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Form4
             // 
