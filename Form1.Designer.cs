@@ -83,6 +83,7 @@
             this.txtExam1.Name = "txtExam1";
             this.txtExam1.Size = new System.Drawing.Size(100, 20);
             this.txtExam1.TabIndex = 4;
+            this.txtExam1.TextChanged += new System.EventHandler(this.txtExam1_TextChanged);
             // 
             // txtExam2
             // 

@@ -40,8 +40,10 @@ namespace prac1
             txtExam3.Clear();
         }
 
-    
-      
+        private void txtExam1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
